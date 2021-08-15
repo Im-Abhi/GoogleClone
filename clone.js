@@ -16,5 +16,9 @@ function changer()
         searchbox.style.color="#000";
         image.src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/3x3dot-black.svg/768px-3x3dot-black.svg.png";
     }
-    
+}
+function searchfunc(gsearch)
+{
+    if(document.getElementById('textbox').value!=="")
+        gsearch.href='https://www.google.com/search?q='+encodeURIComponent(document.querySelector('.search-box').value);
 }
