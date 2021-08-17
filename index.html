@@ -37,7 +37,7 @@
         <div class="search-icon">
             <span><i class="fas fa-search"></i></span>
         </div>
-        <input id="textbox" class="search-box" type="text" onkeydown="if (event.keyCode == 13 || event.which == 13) { window.open(location='https://www.google.com/search?q='+encodeURIComponent(document.getElementById('textbox').value))}" />
+        <input id="textbox" class="search-box" type="text" onkeydown="searchb(event)"/>
         <img class="mic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Google_microphone_logo.png/90px-Google_microphone_logo.png" alt="">
         </div>
         
@@ -46,8 +46,8 @@
 <!-- Search Bar End -->
 
     <div class="extra d-flex justify-content-center mt-5">
-        <a href=""  onclick="searchfunc(this)">
-            <button type="button" class="hover btn btn-light m-1">Google Search</button>
+        <a href="" onclick="searchfunc(this)">
+            <button type="button" class="hover btn btn-light m-1" ">Google Search</button>
         </a>
         <a href="https://www.google.com/doodles">
             <button type="button" class="hover btn btn-light m-1">I'm feeling Lucky</button>
@@ -83,8 +83,6 @@
     </footer>
 
 <!-- Footer End -->
-
-    <!-- <script src="https://kit.fontawesome.com/da4ade7bc3.js" crossorigin="anonymous"></script> -->
 
 <script src="clone.js"></script>
 </body>

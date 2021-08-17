@@ -17,8 +17,21 @@ function changer()
         image.src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/3x3dot-black.svg/768px-3x3dot-black.svg.png";
     }
 }
+var box=document.getElementById('textbox');
 function searchfunc(gsearch)
 {
-    if(document.getElementById('textbox').value!=="")
+    if(box.value.trim()!=="")
         gsearch.href='https://www.google.com/search?q='+encodeURIComponent(document.querySelector('.search-box').value);
 }
+function searchb(e){
+    if (e.keyCode == 13 || e.which == 13)
+    {
+        if(box.value.trim()!=="")
+        { 
+            window.open(location='https://www.google.com/search?q='+encodeURIComponent(document.getElementById('textbox').value))
+        } 
+    }  
+}
+window.addEventListener('load', function() { 
+    document.getElementById('textbox').value="";
+  }, false);
