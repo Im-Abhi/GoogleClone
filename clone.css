@@ -24,7 +24,7 @@ textarea:focus, input:focus{
     min-width:300px;
     width:60%;
     max-width:600px;
-    margin:auto;
+    margin:0 auto;
 }
 .search-icon{
     margin:auto 10px;
@@ -36,9 +36,7 @@ textarea:focus, input:focus{
 }
 .footer{
     background-color:rgb(221, 221, 221);
-    position:absolute;
-    bottom:0;
-    width:100%;
+    width: 100%;
     padding:15px;
 }
 .links a{
@@ -57,4 +55,12 @@ textarea:focus, input:focus{
 }
 .dark{
     width:40px;
+}
+
+.main-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100vh - 56px);
 }
